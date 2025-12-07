@@ -10,10 +10,11 @@
   font-size: large;
   font-weight: bold;
   text-transform: uppercase;
+  background-color: rgb(220, 16, 220);
 }
 
 nav {
-  background-color: #3b3a3a;
+  background-color: rgb(220, 16, 220);
   color: white;
   display: -ms-grid;
   display: grid;
@@ -168,26 +169,52 @@ section #Info_Cont2 h3 {
 .hide {
   display: none;
 }
-
-/*
-@media (max-width: 480px)//Mobiles
-{
-    
+footer {
+  background-color: #3b3a3a;
+  color: white;
+  text-align: center;
+  padding: 1% 0%;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-radius: 10%;
 }
-
-@media (min-width: 481px) and (max-width: 1250px)//Tablets
-{
-
+#nav-heading1 :hover {
+  font-size: 80px;
+  text-underline-position: auto;
 }
+@media screen {
+  /* Styles for larger screens (desktops and up) */
+  nav .header_right .nav-heading {
+    font-size: x-large;
+    padding: 5% 0%;
+  }
 
-@media (min-width: 1251px)//Laptops and up
-{
+  nav .header_right .algos button {
+    font-size: medium;
+    padding: 5% 0%;
+  }
 
+  section {
+    -ms-grid-columns: 10% 80% 10%;
+        grid-template-columns: 10% 80% 10%;
+  }
+
+  section .Complexity_Containers {
+    margin-top: 10%;
+  }
+  section .Complexity_Containers .Pair_Definitions {
+    margin-top: 10%;
+  }
+
+  section #Info_Cont1 {
+    padding: 10% 5%;
+  }
+  section #Info_Cont2 {
+    padding: 10% 5%;
+  }
+
+  section #array_container {
+    height: 60vh;
+  }
 }
-*/
-/*
-    *****************
-    DONE BY:-   Sparsh Asthana
-    *****************
-*/
-/*# sourceMappingURL=style.css.map */

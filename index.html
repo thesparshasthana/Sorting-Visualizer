@@ -6,15 +6,41 @@
 -->
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorting Visualizer</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        .footer-content {
+            text-align: center;
+            padding: 10px;
+            background-color: greenyellow;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 205vh;
+            border-radius: 20%;
+        }
+    </style>
 
 </head>
+
 <body>
+    <script type="text/javascript">
+       var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+          (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]; 
+            s1.async=true;
+            s1.src='https://embed.tawk.to/68ef63de84ffcc195329ec48/1j7jhs872';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+    </script>
 
     <header>
         <nav>
@@ -27,7 +53,7 @@
             </div>
 
             <div class="header_right">
-                <p class="nav-heading">Sorting visualizer By SPARSH :)</p>
+                <h5 class="nav-heading"> <i>Sorting visualizer By SPARSH :) </i></h5>
 
                 <div class="algos">
                     <button >Bubble</button>
@@ -53,12 +79,12 @@
                     <p class="Sub_Heading">Worst case:</p>
                     <p id="Time_Worst"></p>
                 </div>
-                
+
                 <div class="Pair_Definitions">
                     <p class="Sub_Heading">Average case:</p>
                     <p id="Time_Average"></p>
                 </div>
-                
+
                 <div class="Pair_Definitions">
                     <p class="Sub_Heading">Best case:</p>
                     <p id="Time_Best"></p>
@@ -69,7 +95,7 @@
         </div>
 
         <div id="array_container">
-            
+
         </div>
 
         <div id="Info_Cont2">
@@ -82,7 +108,7 @@
                     <p class="Sub_Heading">Worst case:</p>
                     <p id="Space_Worst"></p>
                 </div>
-                
+
             </div>
 
         </div>
@@ -90,11 +116,17 @@
     </section>
 
     <footer>
+        <div class="footer-content">
+            <p style=" color: black;">Developed by <b><u>SPARSH ASTHANA</u></b></p>
+            <p style="color: black;">GitHub: <a href="https://github.com/thesparshasthana" target="_blank"
+                    alt="GitHub Repository">https://github.com/thesparshasthana</a></p>
+            <p style=" color: black;">Sorting Visualizer © 2025 — Visualize. Learn. Sort Smarter.</p>
+        </div>
 
     </footer>
 
-    <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
-    <script src="./scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
+    <script src="./scripts/main.js"></script> <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script> <!--This should be loaded after main.js-->
 
     <script src="./scripts/bubble_sort.js"></script>
     <script src="./scripts/selection_sort.js"></script>
